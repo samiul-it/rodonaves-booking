@@ -2,7 +2,7 @@ import React from "react";
 
 const TopBanner = () => {
   return (
-    <div className="h-48 lg:h-48 bg-[#030061]">
+    <div className="h-48 lg:h-48 bg-[#030061] border-b-8 border-[#00d2cd]">
       {/* <div class="flex items-center justify-center h-full  ">
         <p class=" text-xl font-bold text-[#ffffff]">
           FACA SUA COTACAO E AGENDAMENTO DE

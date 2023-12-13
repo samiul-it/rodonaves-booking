@@ -8,7 +8,11 @@ const NavBar = () => {
       <div className="navbar bg-[#0000ff]">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost text-[#ffffff] lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -50,9 +54,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <a>
-                  FALE CONOSCO 
-                </a>
+                <a>FALE CONOSCO</a>
               </li>
             </ul>
           </div>
@@ -84,9 +86,7 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a>
-                FALE CONOSCO 
-              </a>
+              <a>FALE CONOSCO</a>
             </li>
           </ul>
         </div>
