@@ -26,71 +26,71 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0000ff] rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0000ff] rounded-box w-52 text-[#ffffff] font-semibold"
             >
               {/* Mobile  */}
-              <li className="text-[#ffffff]">
+              <li>
                 <a>
                   ENVIAR MERCADORIA <BsDot />
                 </a>
               </li>
-              <li className="text-[#ffffff]">
+              <li>
                 <a>
                   SERVICOS <BsDot />
                 </a>
               </li>
-              <li className="text-[#ffffff]">
+              <li>
                 <a>
                   CIDADES E PRAZOS <BsDot />
                 </a>
               </li>
-              <li className="text-[#ffffff]">
+              <li>
                 <a>
                   QUEM SOMOS <BsDot />
                 </a>
               </li>
-              <li className="text-[#ffffff]">
+              <li>
                 <a>
-                  FALE CONOSCO <BsDot />
+                  FALE CONOSCO 
                 </a>
               </li>
             </ul>
           </div>
-          <a className=" text-2xl font-semibold">
+          <a className=" text-2xl font-semibold lg:pl-48">
             <span className="text-[#ffffff]">RODONAVES</span>{" "}
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-xs text-[#ffffff]">
             {/* Desktop  */}
-            <li className="text-[#ffffff]">
+            <li>
               <a>
                 ENVIAR MERCADORIA <BsDot />
               </a>
             </li>
-            <li className="text-[#ffffff]">
+            <li>
               <a>
                 SERVICOS <BsDot />
               </a>
             </li>
-            <li className="text-[#ffffff]">
+            <li>
               <a>
                 CIDADES E PRAZOS <BsDot />
               </a>
             </li>
-            <li className="text-[#ffffff]">
+            <li>
               <a>
                 QUEM SOMOS <BsDot />
               </a>
             </li>
-            <li className="text-[#ffffff]">
+            <li>
               <a>
-                FALE CONOSCO <BsDot />
+                FALE CONOSCO 
               </a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end lg:pr-48">
           <a className="btn  font-bold bg-[#ffffff] text-[#0000ff]">
             {" "}
             <RxExit />
