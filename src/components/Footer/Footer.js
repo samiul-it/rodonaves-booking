@@ -108,7 +108,7 @@ const Footer = () => {
 
       <footer className="footer items-center p-4 bg-[#0000ff] text-neutral-content">
         <aside className="items-center grid-flow-col lg:pl-44">
-          <p> © Rodonaves 1970 2023</p>
+          <p> © Rodonaves 1970-2023</p>
         </aside>
         <nav className="flex items-center justify-center gap-1 md:place-self-center  md:justify-self-end  lg:pr-44">
           <a>
