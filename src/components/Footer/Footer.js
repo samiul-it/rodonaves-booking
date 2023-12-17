@@ -90,7 +90,7 @@ const Footer = () => {
         </nav>
 
         <aside className=" lg:pr-20">
-          <a className="  border-b-4 border-[#f5821f] ">
+          <a className="  border-b-2 border-[#f5821f] ">
             <span className="text-[#0054a6] text-3xl  font-black ">
               RODONAVES
             </span>{" "}

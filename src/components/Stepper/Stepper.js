@@ -259,373 +259,415 @@ const Stepper = () => {
           )}
           {addOne == 40 ? (
             <>
-              <p>
-                <span className="text-[#00002e] text-lg font-bold">
+              <p className="mt-4">
+                <span className="text-[#00002e] text-lg font-bold ">
                   Especificação da Mercadoria
                 </span>
               </p>
-              <label className="form-control lg:w-[520px]">
-                <div className="grid lg:grid-cols-3 ">
-                  {fields.map((field, index) => (
-                    <div key={index}>
-                      <div className="label">
-                        <span className="label-text  text-[#00002e] text-sm font-semibold">
-                          {field.fieldLabel}
-                        </span>
+
+              <div className="bg-[#fafafa]  rounded-2xl p-4  mt-4">
+                <label className="form-control ">
+                  <div className="grid lg:grid-cols-3 ">
+                    {fields.map((field, index) => (
+                      <div key={index}>
+                        <div className="label">
+                          <span className="label-text  text-[#00002e] text-sm font-semibold">
+                            {field.fieldLabel}
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder={field.placeholder}
+                          className="input w-full lg:w-[120px] bg-[#f1f1f1]"
+                        />
+                        <div className="label">
+                          <span className="label-text-alt text-[#ff8b84]">
+                            {field.reqLabel}
+                          </span>
+                        </div>
                       </div>
-                      <input
-                        type="text"
-                        placeholder={field.placeholder}
-                        className="input w-full lg:w-[120px] bg-[#f1f1f1]"
-                      />
-                      <div className="label">
-                        <span className="label-text-alt text-[#ff8b84]">
-                          {field.reqLabel}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-2xl flex justify-center mt-5">
-                  <span className="text-[#0000ff]">
-                    {" "}
-                    <FiPlusCircle />
-                  </span>
-                </p>
-                <p className="text-sm font-semibold flex justify-center mt-2">
-                  <span className="text-[#fe5146]">Remover especificações</span>
-                </p>
-              </label>
+                    ))}
+                  </div>
+                  <p className="text-2xl flex justify-center mt-5">
+                    <span className="text-[#0000ff]">
+                      {" "}
+                      <FiPlusCircle />
+                    </span>
+                  </p>
+                  <p className="text-sm font-semibold flex justify-center mt-2">
+                    <span className="text-[#fe5146]">
+                      Remover especificações
+                    </span>
+                  </p>
+                </label>
+              </div>
             </>
           ) : (
             <></>
           )}
           {addOne == 60 ? (
             <>
-              <p>
+              <p className="mt-4">
                 <span className="text-[#00002e] text-lg font-bold">
                   Dados do seu frete
                 </span>
               </p>
-              <label className="form-control lg:w-[520px]">
-                <div className="grid lg:grid-cols-3 ">
-                  {stepThreeFields.map((field, index) => (
-                    <div key={index}>
-                      <div className="label">
-                        <span className="label-text  text-[#00002e] text-sm font-semibold">
-                          {field.fieldLabel}
-                        </span>
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
+                <label className="form-control ">
+                  <div className="grid lg:grid-cols-3 ">
+                    {stepThreeFields.map((field, index) => (
+                      <div key={index}>
+                        <div className="label">
+                          <span className="label-text  text-[#00002e] text-sm font-semibold">
+                            {field.fieldLabel}
+                          </span>
+                        </div>
+                        <p className="p-3 input w-full lg:w-[120px] bg-[#f1f1f1] font-semibold">
+                          {field.placeholder}
+                        </p>
+                        <div className="label">
+                          <span className="label-text-alt text-[#ff8b84]">
+                            {field.reqLabel}
+                          </span>
+                        </div>
                       </div>
-                      <p className="p-3 input w-full lg:w-[120px] bg-[#f1f1f1] font-semibold">
-                        {field.placeholder}
-                      </p>
-                      <div className="label">
-                        <span className="label-text-alt text-[#ff8b84]">
-                          {field.reqLabel}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-xs flex justify-center mt-5 font-semibold">
-                  Previsão de Entrega:
-                  <span className="text-[#0000ff] font-bold">
-                    {" "}
-                    5 dias úteis
-                  </span>
-                </p>
-              </label>
+                    ))}
+                  </div>
+                  <p className="text-sm flex justify-center mt-5 font-semibold">
+                    Previsão de Entrega:
+                    <span className="text-[#0000ff] font-bold">
+                      {" "}
+                      5 dias úteis
+                    </span>
+                  </p>
+                </label>
+              </div>
             </>
           ) : (
             <></>
           )}
           {addOne == 80 ? (
             <>
-              <p>
-                <span className="text-[#00002e] text-lg font-bold">
+              <p className="mt-4">
+                <span className="text-[#00002e] text-2xl font-semibold">
                   Contato
                 </span>
               </p>
-              <label className="form-control lg:w-[520px]">
-                <div className="grid lg:grid-cols-1 ">
-                  {stepFourFields.map((field, index) => (
-                    <div key={index}>
-                      <div className="label">
-                        <span className="label-text  text-[#00002e] text-sm font-semibold">
-                          {field.fieldLabel}
-                        </span>
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
+                <label className="form-control ">
+                  <div className="grid lg:grid-cols-1 ">
+                    {stepFourFields.map((field, index) => (
+                      <div key={index}>
+                        <div className="label">
+                          <span className="label-text  text-[#00002e] text-lg font-semibold">
+                            {field.fieldLabel}
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder={field.placeholder}
+                          className="input w-full  bg-[#f1f1f1]"
+                        />
+                        <div className="label">
+                          <span className="label-text-alt text-[#ff8b84]">
+                            {field.reqLabel}
+                          </span>
+                        </div>
                       </div>
-                      <input
-                        type="text"
-                        placeholder={field.placeholder}
-                        className="input w-full lg:w-[465px] bg-[#f1f1f1]"
-                      />
-                      <div className="label">
-                        <span className="label-text-alt text-[#ff8b84]">
-                          {field.reqLabel}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-xs flex justify-center mt-5 font-semibold">
-                  Previsão de Entrega:
-                  <span className="text-[#0000ff] font-bold">
-                    {" "}
-                    5 dias úteis
+                    ))}
+                  </div>
+                  <p className="text-lg flex justify-center mt-5 font-semibold">
+                    Previsão de Entrega:
+                    <span className="text-[#0000ff] font-bold">
+                      {" "}
+                      5 dias úteis
+                    </span>
+                  </p>
+                </label>
+              </div>
+              <p>
+                <span className="text-[#00002e] text-2xl font-semibold">
+                  Origem
+                </span>
+              </p>
+
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
+                <div className="label">
+                  <span className="label-text  text-[#00002e] text-lg font-semibold">
+                    CNPJ
                   </span>
-                </p>
-              </label>
-              <p>
-                <span className="text-[#00002e] text-lg font-bold">Origem</span>
-              </p>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Digite seu CNPJ aqui"
+                  className="input w-full  bg-[#f1f1f1]"
+                />
+                <div className="label">
+                  <span className="label-text-alt text-[#ff8b84]">
+                    * obrigatório
+                  </span>
+                </div>
 
-              <div className="label">
-                <span className="label-text  text-[#00002e] text-sm font-semibold">
-                  CNPJ
-                </span>
-              </div>
-              <input
-                type="text"
-                placeholder="Digite seu CNPJ aqui"
-                className="input w-full lg:w-[465px] bg-[#f1f1f1]"
-              />
-              <div className="label">
-                <span className="label-text-alt text-[#ff8b84]">
-                  * obrigatório
-                </span>
-              </div>
-
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Estado origem
-                    </span>
-                  </div>
-                  <div className="dropdown">
-                    <div
-                      tabIndex={0}
-                      role="button"
-                      className="lg:w-[200px] btn  flex justify-between "
-                    >
-                      SP <IoIosArrowDown />
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Estado origem
+                      </span>
                     </div>
-                    <ul
-                      tabIndex={0}
-                      className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-                    >
-                      <li>
-                        <a>Item 1</a>
-                      </li>
-                      <li>
-                        <a>Item 2</a>
-                      </li>
-                    </ul>
+                    <div className="dropdown">
+                      <div
+                        tabIndex={0}
+                        role="button"
+                        className="lg:w-[200px] btn  flex justify-between "
+                      >
+                        SP <IoIosArrowDown />
+                      </div>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                      >
+                        <li>
+                          <a>Item 1</a>
+                        </li>
+                        <li>
+                          <a>Item 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Cidade
+                      </span>
+                    </div>
+                    <p className="input lg:w-[230px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Ribeirão Preto"}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Cidade
-                    </span>
-                  </div>
-                  <p className="input lg:w-[230px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Ribeirão Preto"}
-                  </p>
+                <div className="label">
+                  <span className="label-text  text-[#00002e] text-lg font-semibold">
+                    CEP
+                  </span>
                 </div>
-              </div>
-              <div className="label">
-                <span className="label-text  text-[#00002e] text-sm font-semibold">
-                  CEP
-                </span>
-              </div>
-              <p className="p-3 input w-full lg:w-[465px] bg-[#f1f1f1] font-semibold">
-                {" "}
-                14020-200
-              </p>
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Estado origem
-                    </span>
+                <p className="p-3 input w-full  bg-[#f1f1f1] font-semibold">
+                  {" "}
+                  14020-200
+                </p>
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Estado origem
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Av. Presidente Vargas"}
+                    </p>
                   </div>
-                  <p className="input lg:w-[220px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Av. Presidente Vargas"}
-                  </p>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Número
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"111"}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Número
-                    </span>
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Bairro
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Jardim Canadá"}
+                    </p>
                   </div>
-                  <p className="input lg:w-[230px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"111"}
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Bairro
-                    </span>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Complemento
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px]  p-3 bg-[#f1f1f1]">
+                      {"Digite aqui"}
+                    </p>
                   </div>
-                  <p className="input lg:w-[220px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Jardim Canadá"}
-                  </p>
-                </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Complemento
-                    </span>
-                  </div>
-                  <p className="input lg:w-[230px]  p-3 bg-[#f1f1f1]">
-                    {"Digite aqui"}
-                  </p>
                 </div>
               </div>
               <p>
-                <span className="text-[#00002e] text-lg font-bold">
+                <span className="text-[#00002e] text-2xl font-semibold">
                   Destino
                 </span>
               </p>
-              <div className="label">
-                <span className="label-text  text-[#00002e] text-sm font-semibold">
-                  CNPJ
-                </span>
-              </div>
-              <input
-                type="text"
-                placeholder="Digite seu CNPJ aqui"
-                className="input w-full lg:w-[465px] bg-[#f1f1f1]"
-              />
-              <div className="label">
-                <span className="label-text-alt text-[#ff8b84]">
-                  * obrigatório
-                </span>
-              </div>
 
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Estado origem
-                    </span>
-                  </div>
-                  <div className="dropdown">
-                    <div
-                      tabIndex={0}
-                      role="button"
-                      className="lg:w-[200px] btn  flex justify-between "
-                    >
-                      SP <IoIosArrowDown />
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
+                <div className="label">
+                  <span className="label-text  text-[#00002e] text-lg font-semibold">
+                    CNPJ
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Digite seu CNPJ aqui"
+                  className="input w-full  bg-[#f1f1f1]"
+                />
+                <div className="label">
+                  <span className="label-text-alt text-[#ff8b84]">
+                    * obrigatório
+                  </span>
+                </div>
+
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Estado origem
+                      </span>
                     </div>
-                    <ul
-                      tabIndex={0}
-                      className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-                    >
-                      <li>
-                        <a>Item 1</a>
-                      </li>
-                      <li>
-                        <a>Item 2</a>
-                      </li>
-                    </ul>
+                    <div className="dropdown">
+                      <div
+                        tabIndex={0}
+                        role="button"
+                        className="lg:w-[200px] btn  flex justify-between "
+                      >
+                        SP <IoIosArrowDown />
+                      </div>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                      >
+                        <li>
+                          <a>Item 1</a>
+                        </li>
+                        <li>
+                          <a>Item 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Cidade
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Ribeirão Preto"}
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Cidade
-                    </span>
-                  </div>
-                  <p className="input lg:w-[230px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Ribeirão Preto"}
-                  </p>
+                <div className="label">
+                  <span className="label-text  text-[#00002e] text-lg font-semibold">
+                    CEP
+                  </span>
                 </div>
-              </div>
-              <div className="label">
-                <span className="label-text  text-[#00002e] text-sm font-semibold">
-                  CEP
-                </span>
-              </div>
-              <p className="p-3 input w-full lg:w-[465px] bg-[#f1f1f1] font-semibold">
-                {" "}
-                14020-200
-              </p>
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Estado origem
-                    </span>
-                  </div>
-                  <p className="input lg:w-[220px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Av. Presidente Vargas"}
-                  </p>
-                </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Número
-                    </span>
-                  </div>
-                  <p className="input lg:w-[230px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"111"}
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-between ">
-                <div className="">
-                  <div className="label">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Bairro
-                    </span>
-                  </div>
-                  <p className="input lg:w-[220px] font-semibold p-3 bg-[#f1f1f1]">
-                    {"Jardim Canadá"}
-                  </p>
-                </div>
-                <div>
-                  <div className="label ">
-                    <span className="label-text  text-[#00002e] text-sm font-semibold">
-                      Complemento
-                    </span>
-                  </div>
-                  <p className="input lg:w-[230px]  p-3 bg-[#f1f1f1]">
-                    {"Digite aqui"}
-                  </p>
-                </div>
-              </div>
-
-              <p className="mt-5 text-[9px] font-semibold">
-                {" "}
-                * Os dados pessoais coletados para a efetuação de seu cadastro
-                serão utilizados para responder sua solicitação de cotação e
-                para material de campanhas de marketing/promocional e, estão em
-                conformidade com os requisitos da LGPD. Mais detalhes sobre o
-                uso de seus dados pessoais podem ser acessados na{" "}
-                <span className="font-bold underline">
+                <p className="p-3 input w-full  bg-[#f1f1f1] font-semibold">
                   {" "}
-                  Política de privacidade.{" "}
-                </span>{" "}
-              </p>
+                  14020-200
+                </p>
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Estado origem
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Av. Presidente Vargas"}
+                    </p>
+                  </div>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Número
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"111"}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-between ">
+                  <div className="">
+                    <div className="label">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Bairro
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px] font-semibold p-3 bg-[#f1f1f1]">
+                      {"Jardim Canadá"}
+                    </p>
+                  </div>
+                  <div>
+                    <div className="label ">
+                      <span className="label-text  text-[#00002e] text-lg font-semibold">
+                        Complemento
+                      </span>
+                    </div>
+                    <p className="input lg:w-[200px]  p-3 bg-[#f1f1f1]">
+                      {"Digite aqui"}
+                    </p>
+                  </div>
+                </div>
+
+                <p className="mt-5 text-[9px] font-semibold">
+                  {" "}
+                  * Os dados pessoais coletados para a efetuação de seu cadastro
+                  serão utilizados para responder sua solicitação de cotação e
+                  para material de campanhas de marketing/promocional e, estão
+                  em conformidade com os requisitos da LGPD. Mais detalhes sobre
+                  o uso de seus dados pessoais podem ser acessados na{" "}
+                  <span className="font-bold underline">
+                    {" "}
+                    Política de privacidade.{" "}
+                  </span>{" "}
+                </p>
+              </div>
             </>
           ) : (
             <></>
           )}
           {addOne == 100 ? (
             <>
-              <p>
+              <div className="grid grid-cols-1 mt-4">
+                <div className="dropdown">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className=" btn  flex justify-between text-sm font-bold  rounded-2xl"
+                  >
+                    <span className="lg:ml-[150px] text-[#0000ff]">
+                      Escolha uma data
+                    </span>
+                    <IoIosArrowDown />
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a>Item 1</a>
+                    </li>
+                    <li>
+                      <a>Item 2</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="mt-4">
                 <span className="text-[#00002e] text-2xl font-semibold">
                   Resumo da cotação
                 </span>
               </p>
-              <div className="bg-[#fafafa]  rounded-2xl p-4">
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4 ">
                 <label className="form-control w-full ">
                   <div className="label">
                     <span className="label-text text-[#00002e] text-lg font-bold">
@@ -671,7 +713,7 @@ const Stepper = () => {
                   </p>
                 </label>
               </div>
-              <div className="bg-[#fafafa]  rounded-2xl p-4">
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
                 <label className="form-control w-full ">
                   <div className="label">
                     <span className="label-text text-[#00002e] text-lg font-bold">
@@ -717,7 +759,7 @@ const Stepper = () => {
                   </p>
                 </label>
               </div>
-              <div className="bg-[#fafafa]  rounded-2xl p-4">
+              <div className="bg-[#fafafa]  rounded-2xl p-4 mt-4">
                 <label className="form-control w-full ">
                   <div className="label">
                     <span className="label-text text-[#00002e] text-lg font-bold">
@@ -761,16 +803,16 @@ const Stepper = () => {
                     </span>
                   </div>
 
-                  <p className="label-text pt-3 text-[#00002e] text-sm ">
+                  <p className="label-text pt-3 text-[#00002e] text-sm font-semibold ">
                     Sua coleta está agendada para o dia:{" "}
                   </p>
-                  <p className="label-text text-[#0000ff] text-sm ">
+                  <p className="label-text text-[#0000ff] text-sm font-semibold ">
                     30/11/2023
                   </p>
-                  <p className="label-text pt-3 text-[#00002e] text-sm ">
+                  <p className="label-text pt-3 text-[#00002e] text-sm  font-semibold">
                     Este é seu número de protocolo:{" "}
                   </p>
-                  <p className="label-text text-[#0000ff] text-sm ">
+                  <p className="label-text text-[#0000ff] text-sm font-semibold ">
                     123456789
                   </p>
 

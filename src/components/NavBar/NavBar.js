@@ -58,40 +58,38 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <a className=" text-2xl font-semibold lg:pl-48">
-            <span className="text-[#ffffff]">RODONAVES</span>{" "}
+          <a className=" text-2xl font-bold lg:pl-48">
+            <span className="text-[#ffffff] border-b-2  border-[#f5821f]">
+              RODONAVES
+            </span>{" "}
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-xs text-[#ffffff]">
+          <ul className="flex items-center  px-1 text-xs text-[#ffffff] font-semibold ">
             {/* Desktop  */}
-            <li>
-              <a>
-                ENVIAR MERCADORIA <BsDot />
-              </a>
+            <li className="p-2">
+              <a>ENVIAR MERCADORIA</a>
             </li>
-            <li>
-              <a>
-                SERVICOS <BsDot />
-              </a>
+            <BsDot />
+            <li className="p-2">
+              <a>SERVICOS</a>
             </li>
-            <li>
-              <a>
-                CIDADES E PRAZOS <BsDot />
-              </a>
+            <BsDot />
+            <li className="p-2">
+              <a>CIDADES E PRAZOS</a>
             </li>
-            <li>
-              <a>
-                QUEM SOMOS <BsDot />
-              </a>
+            <BsDot />
+            <li className="p-2">
+              <a>QUEM SOMOS</a>
             </li>
-            <li>
+            <BsDot />
+            <li className="p-2">
               <a>FALE CONOSCO</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end lg:pr-48">
-          <a className="btn  font-bold bg-[#ffffff] text-[#0000ff]">
+          <a className="btn  font-bold bg-[#ffffff] text-[#0000ff] rounded-2xl">
             {" "}
             <RxExit />
             ENTRAR
